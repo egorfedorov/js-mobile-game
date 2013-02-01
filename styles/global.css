@@ -1,0 +1,105 @@
+@font-face {font-family: JFRocSol; src: url(/JFRocSol.ttf); }
+@font-face {font-family: JFRocOut; src: url(/JFRocOut.ttf); }
+body, h1, .ui-content .ui-btn-active, .ui-content .ui-bar-a, .ui-content .ui-bar-a input, .ui-content .ui-bar-a select, .ui-content  .ui-bar-a textarea, .ui-content .ui-bar-a button, .ui-content .ui-btn-up-c, .ui-content .ui-btn-hover-c, .ui-content .ui-btn-down-c {
+  font-family: JFRocOut;
+}
+
+#page {
+  background:url(/images/bkg0.jpg) top left no-repeat;
+  background-size:100% 100%;
+}
+
+.item {
+  float:left;
+}
+.item em, .item em:visited {
+  color: white;
+}
+.hide {
+  display:none;
+  font-family: JFRocSol;  
+}
+.item em {
+    background:url(/images/item0.png) top center no-repeat;
+    font-family: JFRocSol;  
+    display: block;
+    text-align:center;
+    height:100%;
+    text-decoration:none;
+    text-shadow:none;
+    font-size:25px;
+    line-height:60px;
+    border-radius:10px;
+    position:relative;
+    cursor: pointer;
+    font-style: normal
+}
+
+.item em span {
+  display: block;
+  background: black;
+  border-radius: 30px;
+  width:60px;
+  height:60px;
+  position:absolute;
+  bottom:17px;
+  left:50%;
+  margin-left:-32px;
+  opacity:0.9;
+}
+
+.item em.correct {
+  background:url(/images/item0_alt.png) top center no-repeat;
+  background-size: 105px;
+}
+
+#start {
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  left: 50%;
+  margin-left:-100px;
+}
+
+#tries {
+  float: left;
+  position:absolute;
+  left: 90px;
+  top: 12px;
+}
+
+.chance, .lost {
+  width: 16px;
+  height:16px;
+  background-image: url(/images/leafa.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right:3px;
+}
+
+.lost {
+  background-image: url(/images/leafb.png);
+}
+
+#status {
+  float:right;
+  position:absolute;
+  right:130px;
+  top:10px;
+  display:none;
+}
+
+#status.win {
+  color:#FFFFFF;
+}
+
+#status.lose {
+  color:#ff5a00;
+}
+
+.ui-bar-a {
+  background:url(/images/bkg_navbar.png) top left repeat-x;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 5px #000;
+}

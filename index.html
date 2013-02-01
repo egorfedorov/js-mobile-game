@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+    <title>Memory Game</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="/styles/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="/scripts/lib/jquery-1.8.2.min.js"></script>
+    <script src="/scripts/lib/jquery.mobile-1.2.0.min.js"></script>
+    <script src="/scripts/lib/jquery.cookie.js"></script>
+    <script src="/scripts/src/settings.js"></script>
+    <script src="/scripts/src/game.js"></script>
+  </head> 
+  <body> 
+    <div data-role="page" id="page">
+      <div data-role="header">
+        <h1>Memory Game</h1>
+        <a href="index.html" id="start-over" data-ajax="false">start over</a>
+        <a href="settings.html" data-icon="gear" data-transition="slide" data-ajax="false">settings</a>
+        <div id="tries"></div>
+        <div id="status"></div>
+      </div>
+      <div data-role="content">
+        <a id="start" href="/" data-icon="star" data-role="button"><span class="txt">Start!</span></a>
+      </div>
+    </div>
+    <div class="hide">Hidden...
+      <img src="/images/item0.png" alt="preload"/>
+      <img src="/images/item0_alt.png" alt="preload"/>
+      <img src="/images/bkg0.jpg" alt="preload"/>
+    </div>
+  </body>
+</html>
